@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import Card from '../../components/Card'
+import Display from '../../components/Display'
 import api from '../../services/api'
 
 const Dashboard = () => {
@@ -14,11 +15,14 @@ const Dashboard = () => {
   }, [])
 
   return (
-    <>
-      {beers.map((product, index) => (
+  
+      <Display>
+         {beers.map((product, index) => (
         <Card product={product} key={index} />
       ))}
-    </>
+      </Display>
+     
+   
   )
 }
 export default Dashboard

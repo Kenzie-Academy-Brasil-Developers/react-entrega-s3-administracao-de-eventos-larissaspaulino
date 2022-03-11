@@ -5,7 +5,6 @@ import Casamento from '../pages/Casamento'
 import Confraternizacao from '../pages/Confraternizacao'
 import Formatura from '../pages/Formatura'
 
-
 const Routes = () => {
   return (
     <Switch>
@@ -15,15 +14,14 @@ const Routes = () => {
       <Route exact path='/'>
         <Dashboard />
       </Route>
-      {/* <Route exact path='/confraternizacao'>
+      <Route exact path='/confraternizacao'>
         <Confraternizacao />
       </Route>
       <Route exact path='/formatura'>
         <Formatura />
-      </Route> */}
+      </Route>
     </Switch>
   )
 }
-
 
 export default Routes

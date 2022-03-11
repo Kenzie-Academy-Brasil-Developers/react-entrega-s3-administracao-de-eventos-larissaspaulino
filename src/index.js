@@ -10,6 +10,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Providers>
         <App />
+       
       </Providers>
     </BrowserRouter>
   </React.StrictMode>,

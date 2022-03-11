@@ -1,16 +1,16 @@
 import { useCasamento } from '../../providers/casamento'
 import Card from '../../components/Card'
-const Casamento = () => {
+import Display from '../../components/Display'
 
-    const { cervejasCasamento } = useCasamento()
-    console.log(cervejasCasamento)
-    
+const Casamento = () => {
+  const { cervejasCasamento } = useCasamento()
+
   return (
-    <>
-        {cervejasCasamento.map((product,index) => (
-            <Card key={index} product={product} isProductCart />
-        ))}
-    </>
+    <Display>
+      {cervejasCasamento.map((product, index) => (
+        <Card key={index} product={product} isProductCart />
+      ))}
+    </Display>
   )
 }
 export default Casamento

@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: var(--white);
         color: var(--black);
+    
     }
 
     body, input, button {
